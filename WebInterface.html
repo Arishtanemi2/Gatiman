@@ -1,0 +1,169 @@
+<head>
+
+
+<style>
+	button {
+  /* margin: 1%; */
+  line-height: 50px;
+  font-weight: bold;
+ margin:0px 350px;
+  padding: 0 40px;
+  background: #F6895A;
+  border: none;
+}
+button:hover {
+  background: lightgreen;
+}
+	.hidden {
+		display: none;
+	}
+table {
+	padding : 1%
+    width:80%;
+	align:center;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding:0.5%;
+    text-align: left;
+}
+table.names tr:nth-child(odd) {
+    background-color: gray;
+}
+table.names tr:nth-child(even) {
+   background-color:#fff;
+}
+table.names th {
+    background-color: salmon;
+    color: white
+}
+ table.names {
+    margin-left:auto;
+    margin-right:auto;
+  }
+	/* apna css*/
+	table.myTable {
+    width:80%;
+	align:center;
+}
+/*
+table.myTable tr:nth-child(even) {
+    background-color: #DCB8B8;
+}
+table.myTable tr:nth-child(odd) {
+   background-color:#fff;
+} */
+table.myTable th {
+    background-color: #C81717;
+    color: white;
+}
+ table.myTable {
+    margin-left:auto;
+    margin-right:auto;
+	 margin-top: 1%;
+	 margin-bottom: 1%;
+  }
+</style>
+</head>
+<body>
+	<table id="myDIV1" class=myTable>
+		<tr>
+		<th colspan="2">Demand - Urgent </th>
+	</tr>
+	<tr>
+		<td>Bus Stop</td>
+		<td>Miyapur</td>
+	</tr>
+	<tr>
+		<td>Bus Number</td>
+		<td>136 KL</td>
+	</tr>
+	<tr>
+		<td>Route</td>
+		<td>Gachibowli to Ameerpet</td>
+	</tr>
+	<tr>
+		<td colspan="2"><button type="button" onclick="myFunction()">Dispatch Bus !</button></td>
+	</tr>
+	</table>
+	<script>
+	function myFunction() {
+	    var x = document.getElementById("myDIV1");
+	    if (x.style.display === "none") {
+	        x.style.display = "block";
+	    } else {
+	        x.style.display = "none";
+					alert("The Driver has been notified to drive the bus to the respective stop");
+
+	    }
+	}
+	</script>
+
+	<table id="myDIV2" class=myTable>
+		<tr>
+		<th colspan="2"style="  background: #3FA8EB">Demand - Rising </th>
+	</tr>
+	<tr>
+		<td>Bus Stop</td>
+		<td>Banjara Hills</td>
+	</tr>
+	<tr>
+		<td>Bus Number</td>
+		<td>142 M</td>
+	</tr>
+	<tr>
+		<td>Route</td>
+		<td>BHEL to Mehdipetnam </td>
+	</tr>
+	<tr>
+		<td colspan="2"><button type="button" onclick="myFunction1()">Dispatch Bus !</button></td>
+	</tr>
+</table>
+<script>
+function myFunction1() {
+		var x = document.getElementById("myDIV2");
+		if (x.style.display === "none") {
+				x.style.display = "block";
+		} else {
+				x.style.display = "none";
+				alert("The Driver has been notified to drive the bus to the respective stop");
+
+		}
+}
+</script>
+	<table id="myDIV3" class=myTable>
+		<tr>
+		<th colspan="2"style="  background: #6C95AE">Demand - Predicted </th>
+	</tr>
+	<tr>
+		<td>Bus Stop</td>
+		<td>Narayanguda</td>
+	</tr>
+	<tr>
+		<td>Bus Number</td>
+		<td>113 M</td>
+	</tr>
+	<tr>
+		<td>Route</td>
+		<td>Mehdipetnam to Uppal</td>
+	</tr>
+	<tr>
+		<td colspan="2"><button type="button"  onclick="myFunction2()">Dispatch Bus !</button></td>
+	</tr>
+	</table>
+	<script>
+	function myFunction2() {
+			var x = document.getElementById("myDIV3");
+			if (x.style.display === "none") {
+					x.style.display = "block";
+			} else {
+					x.style.display = "none";
+					alert("The Driver has been notified to drive the bus to the respective stop");
+
+			}
+	}
+	</script>
+</body>
